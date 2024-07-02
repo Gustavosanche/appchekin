@@ -1,8 +1,8 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    animation: gira 4s ease infinite;
   }
   
   body {
@@ -24,8 +24,24 @@
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   }
-  
+  @keyframes gira {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+
   #login-form fieldset {
     border: none;
     padding: 0;
